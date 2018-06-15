@@ -1,8 +1,7 @@
 <?php
 //select.php (for)
 
-
-$cox=mysqli_connect('localhost', 'root',"", 'the_big_short');
+    require('conexion.php');
 
     $sql="SELECT*FROM equipos";
 
