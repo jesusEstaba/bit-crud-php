@@ -1,4 +1,5 @@
 <?php
+//probando el codigo
     require('conexion.php');
 
     $sql = "SELECT*FROM equipos";
