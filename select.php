@@ -1,11 +1,8 @@
 <?php
     require('conexion.php');
 
-    $sql = "SELECT*FROM equipos";
-    $ResultadoDeLaConsulta = mysqli_query($cox,$sql);
+    $equipos = consulta("SELECT * FROM equipos");
 
-    while ($equipo = mysqli_fetch_assoc($ResultadoDeLaConsulta)) {
-        echo $equipo['nombre']. '<br>';
-    }
+    var_dump($equipos);
 ?>
 
