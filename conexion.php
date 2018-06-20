@@ -9,9 +9,14 @@
 
         $datos = [];
 
-        while ($dato = mysqli_fetch_assoc($ResultadoDeLaConsulta)) {
-            $datos[] = $dato;
+        if(!($ResultadoDeLaConsulta == True || $ResultadoDeLaConsulta == False)){
+
+            while ($dato = mysqli_fetch_assoc($ResultadoDeLaConsulta)) 
+                $datos[] = $dato;
+                
         }
+
+        
 
         return $datos;
     }
